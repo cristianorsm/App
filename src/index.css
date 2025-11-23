@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-900;
+}
+
+/* Barra de rolagem personalizada para áreas com a classe .scroll-area */
+.scroll-area {
+  scrollbar-width: thin;
+  scrollbar-color: #22c55e #020617; /* thumb, track */
+}
+
+.scroll-area::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-area::-webkit-scrollbar-track {
+  background: #020617;
+  border-radius: 999px;
+}
+
+.scroll-area::-webkit-scrollbar-thumb {
+  background: #22c55e;
+  border-radius: 999px;
+}

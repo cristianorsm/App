@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==== Barra de rolagem personalizada para áreas com classe .scroll-area ==== */
+
+.scroll-area {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #22c55e #020617; /* thumb, track */
+}
+
+.scroll-area::-webkit-scrollbar {
+  width: 6px;              /* largura da barra */
+}
+
+.scroll-area::-webkit-scrollbar-track {
+  background: #020617;      /* fundo do trilho */
+  border-radius: 999px;
+}
+
+.scroll-area::-webkit-scrollbar-thumb {
+  background: #22c55e;      /* cor da barrinha */
+  border-radius: 999px;
+}
